@@ -78,4 +78,8 @@ int main(){
 		add_edge(b-1,a-1,tmp);
 	}
 	printf("%d\n",max_flow(s,t));
+	memset(level,0,sizeof(level));
+        memset(iter,0,sizeof(iter));
+        memset(used,0,sizeof(used));
+        for(int i=0;i<MAX_V;i++)G[i].clear();
 }
