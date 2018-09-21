@@ -3,6 +3,7 @@
 #include <cstring>
 #include <stdio.h>
 using namespace std;
+
 int t,m,n;
 unsigned long long dp[20][20];
 int main(){
