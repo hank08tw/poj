@@ -4,7 +4,7 @@
 #define INF 1000000000
 using namespace std;
 
-struct edge{int to,cost};
+struct edge{int to,cost;};
 typedef pair<int,int> P;//first is shortest length, second is number of vertex
 
 int V;
@@ -25,7 +25,7 @@ void dijstra(int s){
 			edge e=G[v][i];
 			if(d[e.to]>d[v]+e.cost){
 				d[e.to]=d[v]+e.cost;
-				que.push(P(d[e.to]),e.to);
+				que.push(P(d[e.to],e.to));
 			}
 		}
 	}
